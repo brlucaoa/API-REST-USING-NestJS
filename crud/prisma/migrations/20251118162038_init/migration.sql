@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Operador" ALTER COLUMN "cpf" SET DATA TYPE TEXT;

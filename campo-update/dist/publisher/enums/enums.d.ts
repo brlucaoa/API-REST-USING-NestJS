@@ -1,0 +1,11 @@
+export declare enum statusMissao {
+    ABERTA = "ABERTA",
+    ANDAMENTO = "ANDAMENTO",
+    FECHADA = "FECHADA"
+}
+export declare enum statusOperador {
+    ATIVO = "ATIVO",
+    TREINAMENTO = "TREINAMENTO",
+    INCAPAZ_TEMPORARIO = "INCAPAZ_TEMPORARIO",
+    INCAPAZ_PERMANENTE = "INCAPAZ_PERMANENTE"
+}
