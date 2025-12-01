@@ -112,13 +112,13 @@ Este projeto possui **duas APIs**:
 
 ## Documentação Swagger
 
--   CRUD API → http://localhost:3000/api\
--   Update API → http://localhost:3002/api
+-   CRUD API → http://localhost:3000/api/
+-   Update API → http://localhost:3002/api-update/
 
 ## Fluxo do RabbitMQ
 
-1.  A API Update envia uma mensagem → RabbitMQ\
-2.  A API CRUD escuta essa fila\
+1.  A API Update envia uma mensagem → RabbitMQ
+2.  A API CRUD escuta essa fila
 3.  Ao receber a mensagem, atualiza o banco usando Prisma
 
 ##  Scripts úteis
