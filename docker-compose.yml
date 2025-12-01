@@ -19,7 +19,7 @@ services:
     networks:
       - app-network
 
-  postgres:
+  db:
     image: postgres:15-alpine
     container_name: postgres
     restart: always
