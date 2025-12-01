@@ -1,5 +1,10 @@
 import {Injectable, OnModuleInit, Logger} from '@nestjs/common';
-import {ClientProxy, ClientProxyFactory, Transport} from '@nestjs/microservices';
+import {
+  ClientProxy,
+  ClientProxyFactory,
+  RmqOptions,
+  Transport,
+} from '@nestjs/microservices';
 import { ConfigService } from '@nestjs/config';
 import {updateMissaoDto} from './dto/create-publisher.dto';
 import {updateOperadorDto} from './dto/create-publisher.dto';
@@ -13,7 +18,7 @@ export class PublisherService {
     private readonly client: ClientProxy;
 
     constructor(private configService: ConfigService) {
-        this.client = ClientProxyFactory.create({
+        this.client = ClientProxyFactory.create<RmqOptions>({
             transport: Transport.RMQ,
             options: {
                 urls: [this.configService.get<string>('RABBITMQ_URL')],
