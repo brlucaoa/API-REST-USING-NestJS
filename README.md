@@ -1,4 +1,4 @@
-# CRUD com UPDATE por RABBIT
+# CRUD COM NestJS, PRISMA, POSTGRES and RABBIT
 
 API completa construída com **NestJS**, **Prisma**, **PostgreSQL**,
 **RabbitMQ** e **Docker**, implementando um CRUD de **Operadores** e
